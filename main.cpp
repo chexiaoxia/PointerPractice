@@ -3,7 +3,7 @@
 using namespace std;
 
 // Pointer p1 points to arr[5], it is same with p = arr;
-// Pointer pi points to arr, so if somethings changes array in function print, the arr in main will change at the same time.
+// Pointer pi points to arr, so if something changes the array (in function print), the arr in main will also be changed.
 void print(int* p1)
 {
      for(int i = 0; i < 5; i++)
@@ -28,7 +28,7 @@ int main()
 
     print(arr);
 
-    // Pointer pi points to arr, so if somethings changes array in function print, the arr in main will change at the same time.
+    // Pointer pi points to arr, so if something changes the array (in function print), the arr in main will also be changed.
     for(int i = 0; i < 5; i++)
     {
         cout << arr[i] << " ";
