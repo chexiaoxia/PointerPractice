@@ -18,7 +18,16 @@ void print1(Student* q)
 {
     for(int i = 0; i < 3; i++)
     {
-        q[i].display();
+	if(i == 1)
+	{
+            //char t[5] = {'y','u','c','h','\0'};
+	    char t1[8]= "Yuchuan";
+            q[i].setName(t1);
+	}
+	int age1 = q[i].getAge();
+	age1++;
+        q[i].setAge(age1);
+	q[i].display();
     }
     cout << endl;
 }

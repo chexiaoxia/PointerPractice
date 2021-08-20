@@ -6,13 +6,23 @@ using namespace std;
 
 Student::Student()
 {
-    strcpy(name,"");
+    strcpy(name, "");
     age = 0;
 }
 
 Student::Student(char* n, int a)
 {
-    strcpy(name,n);
+    strcpy(name, n);
+    age = a;
+}
+
+void Student::setName(char* n)
+{
+    strcpy(name, n);
+}
+
+void Student::setAge(int a)
+{
     age = a;
 }
 
@@ -22,7 +32,7 @@ void Student::display() const
     cout << name << "\t\t" << age << endl;
 }
 
-char* Student::getName() const
+const char* Student::getName() const
 {
     return name;
 }
